@@ -1,0 +1,6 @@
+# Sample WTFCode module
+
+function greet [string t]
+  include local/string
+  return returnvalue (concat string "Hello, " returnvalue (var get t) string "!")
+escape
