@@ -2,5 +2,6 @@
 
 function greet [string t]
   include local/string
-  return returnvalue (concat string "Hello, " returnvalue (var get t) string "!")
+  include local/ostream
+  show log returnvalue (concat string "Hello, " returnvalue (var get t) string "!")
 escape
