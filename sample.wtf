@@ -1,10 +1,7 @@
 # Sample WTFCode module
 
-include local/ostream
-
-show log string "Sample module loaded."
-
 function greet [string t]
+  include local/ostream
   include local/string
   show log returnvalue (concat string "Hello, " returnvalue (var get t) string "!")
 escape
